@@ -17,13 +17,4 @@ services:
         value: production
 
       - key: DATABASE_URL
-        fromDatabase:
-          name: trpc-websockets-db
-          property: connectionString
-
-      - fromGroup: trpc-websockets
-
-databases:
-  - name: trpc-websockets-db
-    plan: starter
-    # plan: free
+        value: postgresql://postgres:b53NY5tGZz70nd2jbPPs@containers-us-west-109.railway.app:5896/railway
